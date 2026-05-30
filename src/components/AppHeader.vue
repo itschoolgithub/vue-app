@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div>
         <h1>Название сайта</h1>
         <a
         href="tel:+77777777777"
@@ -19,11 +19,15 @@ export default {
 }
 </script>
 
-<style>
-    .header {
+<style scoped>
+    div {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: rgb(233, 233, 233);
+    }
+
+    h1 {
+        color: red;
     }
 </style>

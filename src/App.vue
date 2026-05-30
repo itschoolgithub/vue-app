@@ -1,17 +1,21 @@
 <template>
   <AppHeader />
-
-  <h1>{{ title }}</h1>
+  <!-- <h1>{{ title }}</h1>
   <button
     @click="title = 'Hello World!'"
-  >Нажми на меня</button>
+  >Нажми на меня</button> -->
+  <BaseForm />
+  <BaseForm />
+  <BaseForm />
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue';
+import BaseForm from './components/BaseForm.vue';
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    BaseForm
   },
   data() {
     return {
@@ -21,6 +25,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+  h1 {
+    text-decoration: underline;
+  }
 </style>
